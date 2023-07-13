@@ -35,7 +35,7 @@ update() {
 			echo
 		fi
 	else
-		pprint "\n🇦𝐥𝐫𝐞𝐚𝐝𝐲 🇺𝐩 🇹𝐨 🇩𝐚𝐭𝐞\n\n" "cgreen"
+		pprint "🇦𝐥𝐫𝐞𝐚𝐝𝐲 🇺𝐩 🇹𝐨 🇩𝐚𝐭𝐞\n\n" "cgreen"
 	fi
 }
 
@@ -99,15 +99,8 @@ pprint "\n\n\n\n\n🇻 🇮 🇵   🇲 🇺 🇸 🇮 🇨   �
 sleep 1
 clear
 
-pptint "\n\n\n\n\n𝐕𝐈𝐏"
-clear
-pprint "\n\n\n\n\n    𝐌𝐔𝐒𝐈𝐂"
-clear
-pprint "\n\n\n\n\n          𝐁𝐎𝐓"
-clear
-pprint "                      🇻 🇮 🇵   🇲 🇺 🇸 🇮 🇨   🇧 🇴 🇹 "
-pprint "\n\n𝐄𝐧𝐭𝐞𝐫 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭 𝐃𝐚𝐭𝐚 𝐁𝐞𝐥𝐨𝐰\n\n\n"
-pprint "\n𝗔𝗣𝗜 𝗜𝗗:- "; color_reset; read api_id
+pprint "\n𝐄𝐧𝐭𝐞𝐫 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭 𝐃𝐚𝐭𝐚 𝐁𝐞𝐥𝐨𝐰\n\n\n"
+pprint "𝗔𝗣𝗜 𝗜𝗗:- "; color_reset; read api_id
 pprint "\n𝗔𝗣𝗜 𝗛𝗔𝗦𝗛:- "; color_reset; read api_hash
 pprint "\n𝗕𝗢𝗧 𝗧𝗢𝗞𝗘𝗡:- "; color_reset; read bot_token
 pprint "\n𝗢𝗪𝗡𝗘𝗥 𝗜𝗗:- "; color_reset; read ownid
@@ -115,8 +108,8 @@ pprint "\n𝗕𝗢𝗧 𝗡𝗔𝗠𝗘:- "; color_reset; read mbt
 pprint "\n𝗠𝗢𝗡𝗚𝗢 𝗗𝗕:- "; color_reset; read mongo_db
 pprint "\n𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗜𝗗:- "; color_reset; read logger
 pprint "\n𝗦𝗧𝗥𝗜𝗡𝗚 𝗦𝗘𝗦𝗦𝗜𝗢𝗡:- "; color_reset; read string_session
-pprint "\n𝗚𝗥𝗢𝗨𝗣 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘:- "; color_reset; read group_username
-pprint "\n𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘:- "; color_reset; read channel_username
+pprint "\n𝗚𝗥𝗢𝗨𝗣 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘:- "; color_reset; read your_group
+pprint "\n𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘:- "; color_reset; read your_channel
 
 pprint "\n\𝐧🍷𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐕𝐚𝐫𝐬, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 𝐁𝐚𝐛𝐲♨️" "cgreen"
 
@@ -129,8 +122,8 @@ API_HASH = $api_hash
 BOT_TOKEN = $bot_token
 MONGO_DB_URI = $mongo_db
 LOG_GROUP_ID = $logger
-GROUP_USERNAME = $your_group
-CHANNEL_USERNAME = $your_channel
+YOUR_GROUP = $your_group
+YOUR_CHANNEL = $your_channel
 MUSIC_BOT_NAME = $mbt
 STRING_SESSION = $string_session
 OWNER_ID = $ownid""" > .env
